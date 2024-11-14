@@ -119,7 +119,7 @@ pipeline {
             steps {
                 echo "Running Docker container for PHP app"
                 sh '''
-                docker run -d --name php-app -p 8088:80 $DOCKER_TAG
+                docker run -d --name murad_dev_basic_calculator -p 8088:80 $DOCKER_TAG
                 '''
             }
         }
