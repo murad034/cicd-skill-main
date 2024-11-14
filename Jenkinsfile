@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        REGISTRY="docker.io"
+        REGISTRY="registry.hub.docker.com"
         dockerRegistryCredential='8f704212-e7fe-4774-80b5-3dd6faa7e8ff'
         dockerImage = ''
         DOCKER_REGISTRY_URL="https://$REGISTRY"
