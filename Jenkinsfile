@@ -6,7 +6,8 @@ pipeline {
         dockerImage = ''
         DOCKER_REGISTRY_URL="https://$REGISTRY"
         IMAGE_CREATED_BY="jenkins"
-        PROJECT_NAME="php-app-prod"
+        PROJECT_NAME="murad_dev_basic_calculator"
+        DOCKER_USERNAME="murad034"
         GIT_TAG=sh(returnStdout: true, script: '''        
             echo $(git describe --tags)
         ''').trim()
